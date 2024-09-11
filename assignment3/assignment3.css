@@ -1,0 +1,60 @@
+p {
+    color:#0d057e;
+    background-color:aliceblue;
+}
+
+h2 {
+    color:#080347;
+    background-color:antiquewhite;
+}
+
+h3 {
+    color:#0d057e;
+    background-color:rgb(157, 157, 255);
+}
+
+#headerID {
+    color:red;
+    background-color:honeydew; /*not sure if we need bg colors for everything*/
+}
+
+.littleClass {
+    color:#0d057e;
+    background-color: aliceblue;
+}
+
+.listClass {
+    color:#0d057e; /*for ul*/
+    background-color:#edfbe3;
+}
+
+.headerClass {
+    color:#4f47b8; /*h2's and so on*/
+    background-color: #D6FFB7;
+}
+
+.mainClass {
+    color:#3b3bff; /*p's within the main division*/ 
+    background-color:#F5FF90;
+}
+
+.spanClass {
+    color:#FF9F1C;
+}
+
+#division {
+    background-color:#FF9F1C;
+}
+
+a{
+    color:red;
+}
+
+a:visited{
+    color:green;
+}
+
+a:hover {
+    color:yellow;
+}
+
