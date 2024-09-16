@@ -1,0 +1,56 @@
+h1 {
+    color: white;
+}
+
+h2 {
+    color: blue;
+}
+
+h3 {
+    background-color: yellow;
+}
+
+h4 {
+    color: rgb(252, 250, 174);
+    background-color: green;
+}
+
+h5 {
+    color:red;
+}
+
+a{
+    color: green; 
+    text-decoration: none;
+}
+
+a:hover{
+    color:red;
+    text-decoration: underline; 
+}
+
+.headerClass {
+    background-color:rgb(162, 162, 255);
+}
+
+.spanClass {
+    color: orange;
+    font-weight: bold;
+}
+
+.redClass {
+    color:red;
+}
+
+.greenClass {
+    background-color:rgb(127, 255, 127);
+}
+
+.blueClass {
+    color:rgb(0, 0, 172);
+    font-weight: bold;
+}
+
+#divID {
+    background-color: yellow;
+}
