@@ -1,0 +1,98 @@
+body {
+     background-image: url(seal_ocs.png);
+     background-repeat: repeat-y;
+}
+
+p {
+    color:#0d057e;
+    background-color:aliceblue;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h2 {
+    color:#FF9F1C;
+    background-color:antiquewhite;
+
+    font-style:italic;
+    font-weight: normal;
+}
+
+h3 {
+    color:#FF9F1C;
+
+    font-style:italic;
+    font-weight: normal;
+}
+
+img {
+    border: 20px solid black;
+    padding: 10px;
+    background-color:#F5FF90;
+
+}
+
+main {
+    background-color: rgba(240, 248, 255, 0.717);
+}
+#headerID {
+    color:#FF9F1C;
+    background-color:honeydew;
+
+    font-style:italic;
+    font-weight: normal;
+}
+
+.littleClass {
+    color:#0d057e;
+    background-color: aliceblue;
+}
+
+.listClass {
+    color:#0d057e; /*for ul*/
+    /* background-color:#edfbe3;*/
+    background-color:rgb(157, 157, 255);
+}
+
+.headerClass {
+    /* color:#4f47b8; /*h2's and so on*/
+    background-color: #D6FFB7;
+
+    color:#FF9F1C;
+
+    font-style:italic;
+    font-weight: normal;
+}
+
+.mainClass {
+    color:#3b3bff; /*p's within the main division*/ 
+    background-color:#F5FF90;
+
+    text-align: center;
+}
+
+.spanClass {
+    color:#D6FFB7;
+}
+
+.justifiedClass {
+    text-align: justify;
+}
+
+#division {
+    background-color:#daf7de;
+}
+
+a{
+    color:red;
+}
+
+a:visited{
+    color:green;
+}
+
+a:hover {
+    color:yellow;
+}
+
