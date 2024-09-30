@@ -1,0 +1,66 @@
+body {
+  background-color: black; /*body will expand and contract but wrapper division will keep a set width*/
+}
+
+#wrapper {
+  margin: 1em auto; /*auto = gives equal space horizontally within parent container, centers... */
+  padding: 0;
+  width: 960px;
+  border: 1px solid red;
+  background-color: white;
+
+  display: grid; /*grid is automatically one column wide until styled*/
+  grid-template-columns: repeat(6, 1fr);
+}
+
+header {
+  grid-column: span 6;
+  background-color: red;
+  padding-left: 1em; /*16px space to the left, can center this way*/
+}
+
+nav {
+  grid-column: span 1
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+nav li {
+  width: 200px;
+}
+*/
+
+nav li a {
+  display: block;
+  background-color: red;
+  border: 1px solid black;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  grid-column: span 4;
+  padding: 0 1em 0 1em; /*clockwise spacing*/
+}
+
+#bob {
+  float: right; /*want the image to be on the left and let the text float around it */
+  margin-left: 1em;
+}
+
+aside {
+  background-color: rgb(140, 140, 249);
+  padding: 1em; /* all around */
+  color: white;
+}
+
+footer {
+  grid-column: span 6;
+  background-color: yellow;
+}
