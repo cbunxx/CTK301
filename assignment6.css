@@ -1,0 +1,112 @@
+h1 h2 {
+    font-family: Arial, Helvetica, sans-serif; /*??*/
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    margin: 10px;
+    padding: 10px 10px 10px 15px;
+    grid-column: span 4;
+}
+
+h2 {
+    font-family: Helvetica;
+    border-bottom: 4px solid black;
+    margin: 5px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+body {
+    background-image: url(a62.png);
+}
+
+nav {
+    grid-column: span 1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav li {
+    /*display: block;*/
+    border: 1px solid red;
+    margin: 10px;
+    background-color: red;
+}
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color:brown;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    border-top: 5px solid black;
+    background-color: red;
+    padding: 5px;
+    grid-column: span 4;
+}
+
+footer p {
+    text-align: center;
+    padding: 0px 1em 0px 1em;
+
+}
+
+main {
+    grid-column: span 3;
+    margin-right: 20px;
+}
+#wrap {
+    border: 5px solid black;
+    background-color: white;
+    margin: 1em auto;
+    width: 960px;
+    display: grid;
+    padding-top: 5px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#image {
+    border: 4px solid black;
+    padding: 10px;
+    margin: 1em 1em auto 5px;
+    float: left;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+a {
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+
