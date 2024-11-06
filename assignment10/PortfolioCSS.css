@@ -1,0 +1,161 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ffddfb; /*maybe put in a cute pattern or art bg!*/
+}
+
+#wrapper {
+    background-color: white;
+    width: 1200px;
+    margin: 1em auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+   /* grid-column-gap: 24px; */
+}
+
+header {
+    border-bottom: 5px solid #99c2ff;
+    grid-column: span 12;
+}
+
+ul{
+    list-style-type: none;
+    margin: 20px 10px;
+    padding: 0px;
+}
+
+nav li {
+    display: inline-block;
+    background-color: #99c2ff;
+    width: 200px;
+    margin: 0px 20px;
+}
+
+nav a {
+    display: block;
+    padding: 5px;
+    color:#fff08e;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color:#624630;
+}
+
+#HomeLi{
+    margin-left: 355px;
+    background-color: white;
+    padding: 0px;
+    width: auto;
+}
+
+#HomeLi a{
+    color:#99c2ff;
+    font-size: 24px;
+    transition: all .5s;
+}
+
+#HomeLi a:hover{
+    color: #624630;
+    font-size: 26px;
+}
+
+
+footer{
+    background-color: #99c2ff;
+    grid-column: span 12;
+}
+
+footer li{
+    display: inline-block;
+}
+
+footer ul{
+    /*margin-left: 400px;*/
+    text-align: center;
+}
+
+footer a{
+    display: inline-block;
+    color: #fff08e;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+}
+
+footer a:hover{
+    color:#624630;
+}
+
+/* end of shared elements*/
+
+main {
+    grid-column: span 12;
+}
+
+.AboutMeDiv {
+    width: 600px;
+    margin: 50px 0px 150px 300px;
+    padding: 10px;
+    background-color:#fff08e;
+    color:#624630;
+    border: 2px dotted #624630;
+}
+
+
+#me {
+    width: 180px;
+    margin: 10px 20px;
+    float: left;
+    border-radius: 100px;
+}
+
+.more {
+    font-size: 24px;
+    margin: 50px;
+    font-style: italic;
+    display: inline-block;
+    color:#624630;
+}
+
+.ArtDiv {
+    margin-bottom: 20px;
+    color: #624630;
+}
+
+.ArtDiv img {
+    width: 200px;
+    height: 300px;
+    margin: 0px 10px 0px 25px;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.ArtDiv img:hover {
+    opacity: 0.5;
+    box-shadow: 10px 5px 0px #624630; /* x, y, blur, color */
+}
+
+.WebDiv {
+    margin-bottom: 20px;
+    color:#624630;
+}
+
+
+.WebDiv img {
+    width: 478px;
+    margin: 0px 10px 0px 25px;
+    border-radius: 5px;
+    transition:all 0.5s;
+}
+
+.WebDiv img:hover {
+    opacity: 0.5;
+    box-shadow: 10px 5px 0px #624630;
+}
