@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+
+        <!--font-->
+        <link rel="stylesheet" href="https://use.typekit.net/nzq4rzn.css">
+
+        <!--CDN gallery-->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
+        <link rel="stylesheet" href="PortfolioCSS.css">
+    <title>CJA Artwork</title>
+</head>
+<body>
+    <div id = "wrapper">
+        <!-- entire page -->
+    <header> 
+        <nav>
+            <ul>
+            <li><a href="#">artwork</a></li>
+            <li><a href="#">websites</a></li>
+            <li><a href="#">contact</a></li>
+            <li id = "HomeLi"><a href="HomePage.html">CJA</a></li> <!--use a png here at some point-->
+            </ul>
+        </nav>
+    </header>
+
+        <main class = "artMain">
+            <h1>My Artwork</h1>
+            <!-- <a href="#"><img src="sanuso_ss.jpg" alt="art"></a>
+            <a href="#"><img src="naydra_ss.jpg" alt="Art"></a>
+            <a href="#"><img src="XieLian_ss.jpg" alt="Art"></a>
+            <a href="#"><img src="nana_ss.jpg" alt="Art"></a> -->
+            <section> <!--doesn't need styling-->
+                <a href="Nana.png" data-fancybox="gallery" data-caption="Nana">
+                  <img src="nana_ss.jpg"></a>
+                <a href="sanji_usopp.png" data-fancybox="gallery" data-caption="Sanji and Usopp">
+                  <img src="sanuso_ss.jpg"></a>
+                <a href="Xie_Lian.png" data-fancybox="gallery" data-caption="Xie Lian">
+                  <img src="XieLian_ss.jpg"></a>
+                  <a href="Naydra.png" data-fancybox="gallery" data-caption="Naydra and link">
+                    <img src="naydra_ss.jpg"></a>
+                <a href="Orchid.jpg" data-fancybox="gallery" data-caption="Orchid">
+                    <img src="Orchid.jpg"></a>
+            </section>
+
+        </main>
+        <!--make aside, p under photos, individual pages...-->
+
+        <aside id="artAside">
+            <h2>My Process!</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut a ad illo eveniet fugiat, earum deleniti expedita accusantium! Sit itaque voluptas recusandae id esse labore veniam eveniet eaque reiciendis obcaecati. </p>
+        </aside>
+        
+
+    <footer> 
+        <ul>          
+            <!--<li><a href="#" target="_blank"><i class="bi bi-instagram"></i></a></li> -->
+            <a href="https://instagram.com" target="_blank" class="bi bi-instagram"></a>
+            <li><a href="#" target="_blank" class="bi bi-twitter-x"></a></li>
+            <li><a href="https://www.linkedin.com/in/chrissy-abobon-40886a2b7/" target="_blank" class="bi bi-linkedin"></a></li>
+            <li><a href="#" target="_blank" class="bi bi-envelope-heart-fill"></a></li>
+        </ul>
+    </footer>
+
+    </div>
+
+        <script>   
+            Fancybox.bind("[data-fancybox]", {});
+        </script>
+
+</body>
+</html>
