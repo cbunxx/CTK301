@@ -11,23 +11,25 @@
         <!--CDN gallery-->
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
-
+        
+        <!-- <link rel="stylesheet" href="boxLayout.css"> -->
         <link rel="stylesheet" href="PortfolioCSS.css">
+        
     <title>CJA Artwork</title>
 </head>
 <body>
     <div id = "wrapper">
         <!-- entire page -->
-    <header> 
-        <nav>
-            <ul>
-            <li><a href="#">artwork</a></li>
-            <li><a href="#">websites</a></li>
-            <li><a href="#">contact</a></li>
-            <li id = "HomeLi"><a href="HomePage.html">CJA</a></li> <!--use a png here at some point-->
-            </ul>
-        </nav>
-    </header>
+            <header> 
+                <nav>
+                    <ul>
+                        <li><a href="ArtPage.html">artwork</a></li>
+                        <li><a href="#">websites</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li id = "HomeLi"><a href="HomePage.html">CJA</a></li> 
+                    </ul>
+                </nav>
+            </header>
 
         <main class = "artMain">
             <h1>My Artwork</h1>
@@ -38,18 +40,31 @@
             <section> <!--doesn't need styling-->
                 <a href="Nana.png" data-fancybox="gallery" data-caption="Nana">
                   <img src="nana_ss.jpg"></a>
+
                 <a href="sanji_usopp.png" data-fancybox="gallery" data-caption="Sanji and Usopp">
                   <img src="sanuso_ss.jpg"></a>
+
                 <a href="Xie_Lian.png" data-fancybox="gallery" data-caption="Xie Lian">
                   <img src="XieLian_ss.jpg"></a>
+
                   <a href="Naydra.png" data-fancybox="gallery" data-caption="Naydra and link">
                     <img src="naydra_ss.jpg"></a>
-                <a href="Orchid.jpg" data-fancybox="gallery" data-caption="Orchid">
-                    <img src="Orchid.jpg"></a>
+
+                <a href="Orchid.jpg" data-fancybox="gallery" data-caption="Fairy Orchid"> <!--full image when opening gallery-->
+                    <img src="Orchid_ss.png"></a> <!--thumbnail outside-->
             </section>
 
+            <!-- <figure>
+                <img src="https://loremflickr.com/640/480" src="Cat">
+                <figcaption><p>This is a cat</p></figcaption>
+              </figure>
+
+              <figure>
+                <img src="https://loremflickr.com/640/480" src="Cat">
+                <figcaption><p>This is a cat</p></figcaption>
+              </figure> -->
+
         </main>
-        <!--make aside, p under photos, individual pages...-->
 
         <aside id="artAside">
             <h2>My Process!</h2>
@@ -70,7 +85,8 @@
     </div>
 
         <script>   
-            Fancybox.bind("[data-fancybox]", {});
+            Fancybox.bind("[data-fancybox]", {}); //gallery
+
         </script>
 
 </body>
