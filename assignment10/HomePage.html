@@ -23,8 +23,8 @@
         <nav>
             <ul>
             <li><a href="ArtPage.html">artwork</a></li>
-            <li><a href="#">websites</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="classwork.html">websites</a></li>
+            <li><a href="contact.html">contact</a></li>
             <li id = "HomeLi"><a href="HomePage.html">CJA</a></li> <!--use a png here at some point-->
             </ul>
         </nav>
@@ -34,28 +34,30 @@
         <div class = "AboutMeDiv">
             <img id="me" src="IMG_0560.JPG" alt="A photo of myself"> 
 
-            <h1>Welcome!</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores fuga quos nobis necessitatibus pariatur facere animi eum error eligendi nam molestiae temporibus alias, ut unde dolores quis doloremque natus soluta. </p> <!-- maybe add a link to mail or smth-->
+            <h1>Chrissy Abobon</h1>
+            <p> I'm a current interdisciplinary Creative Technologies major and Computer Science minor at Illinois State University. I am also a self taught artist under the name cinnamonbvnxx. </p>
+            <!-- maybe add a link to mail or smth-->
         </div>
 
         <audio controls autoplay >
             <source src="Lemon Chocolate.wav" type="audio/wav">
         </audio>
 
-        <div class = "ArtDiv"> <!--instead of a gallery or light box, just showcase best recent works?-->
-            <h2>My Artwork</h2>
-            <img src="sanuso_ss.jpg" alt="art">
-            <img src="naydra_ss.jpg" alt="Art">
-            <img src="XieLian_ss.jpg" alt="Art">
-            <img src="nana_ss.jpg" alt="Art">
+        <div id="myCarousel" class="f-carousel"> 
+            <div class="f-carousel__slide"><img src="naydra_ss.jpg"></div>
+            <div class="f-carousel__slide"><img src="nana_ss.jpg"></div>
+            <div class="f-carousel__slide"><img src="OC_sketch_ss.png"></div>
+            <div class="f-carousel__slide"><img src="FierceDeity_ss.png"></div>
+            <div class="f-carousel__slide"><img src="yambro_ss.png"></div>
+            
+        </div>
 
-            <!--figure out if theres a way to show more than one image-->
-            <!-- <div id="myCarousel" class="f-carousel">
-                <div class="f-carousel__slide"><img src="sanuso_ss.jpg"></div>
-                <div class="f-carousel__slide"><img src="naydra_ss.jpg"></div>
-                <div class="f-carousel__slide"><img src="XieLian_ss.jpg"></div>
-                <div class="f-carousel__slide"><img src="nana_ss.jpg"></div>
-            </div> -->
+        <div class = "ArtDiv"> 
+            <h2>My Artwork</h2>
+            <img src="sanuso_ss.jpg" alt="sanji and usopp">
+            <img src="Orchid_ss.png" alt="orchid sketch">
+            <img src="XieLian_ss.jpg" alt="Xie Lian digital painting">
+            <img src="orihime_ss.png" alt="Nana digital painting">
 
             <a class="more" href="ArtPage.html">More!</a>
         </div>
@@ -64,7 +66,7 @@
             <h2>My Web Projects</h2>
             <a href="https://cbunxx.github.io/CTK301/Assignment7/assignment7.html" target="_blank"><img src="midterm_website.png" alt="web"></a>
             <a href="https://cbunxx.github.io/CTK301/assignment5/assignment5.html" target="_blank"><img src="assignment5_waves.png" alt="web"></a>
-            <a class="more" href="#">More!</a>       
+            <a class="more" href="classwork.html">More!</a>       
         </div> 
     </main>
 
@@ -74,17 +76,24 @@
             <a href="https://instagram.com" target="_blank" class="bi bi-instagram"></a>
             <li><a href="#" target="_blank" class="bi bi-twitter-x"></a></li>
             <li><a href="https://www.linkedin.com/in/chrissy-abobon-40886a2b7/" target="_blank" class="bi bi-linkedin"></a></li>
-            <li><a href="#" target="_blank" class="bi bi-envelope-heart-fill"></a></li>
+            <li><a href="mailto:cjabobon@gmail.com" class="bi bi-envelope-heart-fill"></a></li>
         </ul>
     </footer>
 
     </div>
 
-    <script>
-        const container = document.getElementById("myCarousel");
-        const options = { infinite: true };
-        new Carousel(container, options);
-    </script>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.umd.js"></script>
+  <script>
+    new Carousel(document.getElementById("myCarousel"), {
+      Autoplay : {
+        timeout : 4000
+      }
+    }, {
+      Autoplay
+    });
+  </script>
 
 </body>
 </html>
