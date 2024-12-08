@@ -1,8 +1,8 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #624630;
-    background-color: #ffddfb;
-     /*maybe put in a cute pattern or art bg!*/
+    /* background-color: #ffddfb; */
+    background-image: url(Portfolio_bg.png);
 }
 
 #wrapper {
@@ -12,7 +12,6 @@ body {
     padding: 25px;
     display: grid;
     grid-template-columns: repeat(12,1fr);
-   /* grid-column-gap: 24px; */
 }
 
 header {
@@ -35,6 +34,7 @@ nav li {
     background-color: #99c2ff;
     width: 200px;
     margin: 0px 20px;
+    padding: 5px;
 }
 
 nav a {
@@ -45,7 +45,7 @@ nav a {
     text-align: center;
     font-weight: bold;
     margin: 0px;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     transition: all 0.2s;
 }
@@ -55,7 +55,7 @@ nav a:hover{
 }
 
 #HomeLi{
-    margin-left: 355px;
+    margin-left: 330px;
     background-color: white;
     padding: 0px;
     width: auto;
@@ -92,7 +92,6 @@ footer li{
 }
 
 footer ul{
-    /*margin-left: 400px;*/
     text-align: center;
 }
 
@@ -101,11 +100,11 @@ footer a{
     color: #fff08e;
     text-decoration: none;
     padding: 10px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 footer a:hover{
-    color:#624630;
+    color: #ebde86;
 }
 
 /* end of shared elements*/
@@ -116,6 +115,7 @@ main {
 
 audio {
     margin-left: 450px;
+    border-radius: 5px;
 }
 
 .AboutMeDiv {
@@ -208,17 +208,19 @@ audio {
 .artMain{
     grid-column: span 12;
     text-align: center;
+    border: 5px dotted #624630;
+    margin-bottom: 15px;
 }
 
-.artMain h1{
+.arth1{
     text-align: center;
     padding: 15px;
+    grid-column: span 12;
 }
 
 #artAside h2{
     font-family: "olivita", sans-serif;
     font-style: italic;
-    
 }
 
 .artMain section img{
@@ -238,10 +240,9 @@ audio {
 aside {
     grid-column: span 2;
     background-color: #fff08e;
-    opacity: 5px;
     padding: 2em;
     margin: 1em;
-    border: 5px dotted #624630;
+    /* border: 5px dotted #624630; */
 }
 
 aside p {
@@ -281,7 +282,7 @@ article {
 article img {
     width: 100%;
     border-radius: 5px;
-    display: inline-block; /*? also need to crop cover*/
+    display: inline-block; 
     transition: all 0.5s;
 }
 
@@ -300,7 +301,6 @@ h3 {
     /* border: 5px dotted #624630; */
     grid-column: span 3;
     background-color: #fff08e;
-    /* margin-bottom: 15px; */
     padding: 10px;
 }
 
@@ -311,7 +311,6 @@ h3 {
 }
 
 .current img:hover {
-    opacity: 0.5;
     box-shadow: 10px 5px 0px #624630;
 }
 
@@ -325,7 +324,6 @@ figure {
   figcaption {
     width: 100%;
     position: absolute; /* this places the caption on top of the image */
-    /*top: 138px; /* places the caption in the top left corner */
     top: 0;
     left: 0;
     color: #624630;
@@ -333,26 +331,46 @@ figure {
     font-weight: bold;
     text-align: center;
     opacity: 0; /* this hides the caption */
-    transition: .5s opacity; /* this fades in the hover */
+    transition: .5s all; /* this fades in the hover */
+    height: 100%;
+    background-color: #ffddfbb7;
+    border-radius: 5px;
   }
   
   figure:hover figcaption{
     opacity: 5; /* show the caption on hover */
+    box-shadow: 10px 10px 0px #624630;
+
   }
 
 /*contact page*/
 
-/* form {
+ form {
     display: inline-block;
     width: 600px;
-    height: 600px;
-    padding: 10px;
+    padding: 10px 100px;    
     margin: 50px;
     background-color:#fff08e;
-    border: 2px dotted #624630;
+    border: 5px dotted #624630;
+    border-radius: 15px;
+    /* box-shadow: 1px 1px 10px #62463075; */
 } 
  .contact {
     text-align: center;
+ }
+
+ .contact h1 {
+    font-size: xx-large;
+ }
+
+ .contact p {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: left;
+ }
+
+ .contact p span {
+    font-weight: bold;
  }
 
 label {
@@ -362,16 +380,39 @@ label {
 }
 
 button {
-    margin-left: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 15px;
+    font-size: 20px;
     padding: 5px 15px 5px 15px;
+    background-color:#624630;
+    color:#ebde86;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s color;
+    margin: 15px;
+    float: right;
+}
+
+button:hover{
+    color:#99c2ff;
 }
 
 .labelText {
-    padding-top: 50px;
-} */
+    text-align: left;
+    margin: 25px 0px;
+} 
+
+textarea{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+input{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
 
 iframe {
     margin-left: 310px;
+    margin: 30px 0px 30px 310px;
 }
